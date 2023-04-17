@@ -26,13 +26,14 @@ body {
 
 .video {
     width: 100%;
+    height: clamp(220px, calc(400 / 700 * 100vw ), 400px);
 }
 
 .controls {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: clamp(30px, calc(40 / 700 * 100vw ), 40px);
     padding: 14px;
     background-color: rgba(33, 41, 65, 0.99);
     width: 100%;
