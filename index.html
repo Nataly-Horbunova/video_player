@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video player</title>
+    <!-- ------------------- FONT AWESOME -------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- -------------------- CUSTOM STYLES---------------   -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<body>
+
+<div class="player">
+    <video class="video" poster="./assets/images/Lens_Zoom_Effect_Transitions.jpg">
+        <source src="./assets/video/Lens_Zoom_Effect_Transitions.mp4"/>
+        <source src="./assets/video/Lens_Zoom_Effect_Transitions.webm"/>
+        <source src="./assets/video/Lens_Zoom_Effect_Transitions.ogg"/>
+    </video>
+    <div class="controls">
+        <div>
+            <i class="fa-solid fa-play playButton"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-backward rewaindBack"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-forward rewaindForward"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-stop stopButton"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-volume-low volumeDownButton"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-volume-high volumeUpButton"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-expand fullScreenButton"></i>
+        </div>
+    </div>
+    <div class="playlist">
+        <span>Website Or Phone App Presentation</span>
+        <button class="videoTrack" data-src="Website_Or_Phone_App_Presentation"
+                data-poster="Website_Or_Phone_App_Presentation.jpg">Play
+        </button>
+        <span>Minimalist Titles 3.0</span>
+        <button class="videoTrack" data-src="Minimalist_Titles_3.0" data-poster="Minimalist_Titles_3.0.jpg">Play
+        </button>
+        <span>Elegant Logo Intro</span>
+        <button class="videoTrack" data-src="Elegant_Logo_Intro" data-poster="Elegant_Logo_Intro.jpg">Play</button>
+        <span>Minimal Transitions</span>
+        <button class="videoTrack" data-src="Minimal_transitions" data-poster="Minimal_transitions.jpg">Play</button>
+        <span>Lens Zoom Effect Transitions</span>
+        <button class="videoTrack" data-src="Lens_Zoom_Effect_Transitions"
+                data-poster="Lens_Zoom_Effect_Transitions.jpg">Play
+        </button>
+        <span>Earth Planet</span>
+        <button class="videoTrack" data-src="Earth_Planet" data-poster="Earth_Planet.jpg">Play</button>
+    </div>
+
+</div>
+
+<script src="./scripts/script.js"></script>
+
+</body>
+</html>
