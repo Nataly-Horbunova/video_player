@@ -6,6 +6,16 @@ const poster = localStorage.getItem('poster');
 if (videoSrc && poster) {
     video.innerHTML = videoSrc;
     video.poster = './assets/images/' + poster;
+} else {
+    const videoSrc = `
+        <source src="../assets/video/Lens_Zoom_Effect_Transitions.mp4"/>
+        <source src="../assets/video/Lens_Zoom_Effect_Transitions.webm"/>
+        <source src="../assets/video/Lens_Zoom_Effect_Transitions.ogg"/>`;
+    const poster = "./assets/images/Lens_Zoom_Effect_Transitions.jpg"
+    video.innerHTML = videoSrc;
+    video.poster = poster;
+    localStorage.setItem('videoSrc', videoSrc);
+    localStorage.setItem('poster', poster);
 }
 
 video.load();
